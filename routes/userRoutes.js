@@ -78,7 +78,7 @@ Router.get("/users/:userId/weather/:date", async (req, res) => {
 });
 
 async function fetchWeather(location) {
-    const apiKey = 'OPENWEATHERMAP_API_KEY';
+    const apiKey = 'd718d981f62a74bf47c8626b72982c4d';
     const response = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`
     );
